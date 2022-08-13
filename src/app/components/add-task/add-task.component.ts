@@ -21,7 +21,9 @@ export class AddTaskComponent implements OnInit {
     ) {
         this.subscription = this.uiService
             .onToggle()
-            .subscribe( value => this.showAddTask = value)
+            .subscribe(
+                value => this.showAddTask = value
+            )
     }
 
     ngOnInit(): void {
